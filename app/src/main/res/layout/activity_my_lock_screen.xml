@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context=".MyLockScreenActivity"
+    android:background="#FFD0CDCD">
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Theft Security"
+        android:typeface="serif"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/txt1"
+        android:text="Click on enable to activate the administrator and start lock security"
+        android:typeface="serif"
+        android:fontFamily="sans-serif-condensed" />
+
+    <Button
+        android:id="@+id/btnEnable"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/my_button"
+        android:text="Enable"
+        android:layout_below="@+id/txt2"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btnDisable"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/my_button"
+        android:text="Disable"
+        android:layout_below="@+id/btnEnable"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btnLock"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/my_button"
+        android:text="Lock Now"
+        android:layout_below="@+id/btnDisable"
+        android:textSize="20dp" />
+
+</RelativeLayout>
